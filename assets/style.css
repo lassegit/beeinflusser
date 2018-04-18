@@ -477,42 +477,6 @@ a {
   .links img {
     vertical-align: middle; }
 
-.tech-list {
-  list-style: none;
-  padding: 0; }
-  .tech-list li {
-    display: inline-block;
-    margin: 4px 4px 4px 4px; }
-  .tech-list .title {
-    color: gray;
-    display: block; }
-    @media (min-width: 992px) {
-      .tech-list .title {
-        display: inline-block; } }
-  .tech-list .item {
-    background: #0090ec;
-    color: #fff;
-    padding: 5px 7px;
-    border-radius: 5px; }
-  .tech-list .item-logo {
-    vertical-align: middle; }
-
-.portfolio .portfolio-title {
-  font-weight: normal;
-  font-family: "open_sanssemibold", sans-serif; }
-
-.portfolio .portfolio-image {
-  width: 100%;
-  margin-bottom: 10px;
-  border-radius: 5px; }
-
-.portfolio .portfolio-text {
-  font-weight: normal;
-  font-family: "open_sansregular", sans-serif; }
-
-.portfolio .portfolio-external {
-  vertical-align: middle; }
-
 .footer {
   color: gray;
   text-align: left;
