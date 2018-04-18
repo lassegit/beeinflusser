@@ -1,0 +1,165 @@
+@import "../../node_modules/node-normalize-scss/_normalize.scss";
+@import "font";
+
+$mobile: 768px;
+$tablet: 992px;
+$text-color: #353535;
+$font-bold: 'open_sanssemibold', sans-serif;
+$font-normal: 'open_sansregular', sans-serif;
+
+body {
+  background: #f2f2f2;
+  color: $text-color;
+  font-family: $font-normal;
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  margin: 30px auto 0 auto;
+  padding: 0 15px;
+  max-width: 600px;
+}
+
+h2 {
+  font-family: $font-bold;
+  margin: 30px 0 10px 0;
+}
+
+b, strong {
+  font-weight: normal;
+  font-family: $font-bold;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  font-weight: normal;
+  font-family: $font-bold;
+  &:hover {
+    border-bottom-style: solid;
+    color: #0090ec
+  }
+}
+
+.info {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  @media (min-width: $tablet) {
+    padding-bottom: 10px;
+  }
+
+  .pic {
+    border-radius: 50%;
+    max-width: 250px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin: 20px 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+    font-family: $font-bold;
+  }
+
+  .title-passive {
+    color: #808080;
+  }
+
+  .sub {
+    font-family: $font-normal;
+    font-weight: normal;
+    line-height: 40px;
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
+
+.flag {
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    line-height: 40px;
+    @media (min-width: $mobile) {
+      display: inline-block;
+      margin: 3px 8px;
+      width: 230px;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 4px 4px 4px 4px;
+  }
+
+  .title {
+    color: gray;
+    display: block;
+    @media (min-width: $tablet) {
+      display: inline-block;
+    }
+  }
+
+  .item {
+    background: #0090ec;
+    color: #fff;
+    padding: 5px 7px;
+    border-radius: 5px;
+  }
+
+  .item-logo {
+    vertical-align: middle;
+  }
+}
+
+.portfolio {
+  .portfolio-title {
+    font-weight: normal;
+    font-family: $font-bold;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .portfolio-text {
+    font-weight: normal;
+    font-family: $font-normal;
+  }
+
+  .portfolio-external {
+    vertical-align: middle;
+  }
+}
+
+.footer {
+  color: gray;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+  margin-top: 50px;
+}
