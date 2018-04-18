@@ -401,6 +401,9 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background: #f2f2f2;
   color: #353535;
@@ -476,6 +479,22 @@ a {
         width: 230px; } }
   .links img {
     vertical-align: middle; }
+
+.email {
+  font-family: "open_sansregular", sans-serif;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.button {
+  font-family: "open_sansregular", sans-serif;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  font-size: 18px;
+  text-align: center; }
 
 .footer {
   color: gray;

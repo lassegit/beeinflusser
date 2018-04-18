@@ -7,6 +7,10 @@ $text-color: #353535;
 $font-bold: 'open_sanssemibold', sans-serif;
 $font-normal: 'open_sansregular', sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #f2f2f2;
   color: $text-color;
@@ -105,8 +109,26 @@ a {
   }
 }
 
+.email {
+  font-family: $font-normal;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
+.button {
+  font-family: $font-normal;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  font-size: 18px;
+  text-align: center;
+  &:hover {
 
+  }
+}
 
 .footer {
   color: gray;
