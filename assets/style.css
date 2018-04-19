@@ -465,6 +465,8 @@ a {
     border-bottom: 1px solid #ddd;
     font-weight: normal;
     font-family: "open_sanssemibold", sans-serif; }
+  .info .subtitle-callout {
+    color: #808080; }
   .info .title-passive {
     color: #808080; }
   .info .sub {

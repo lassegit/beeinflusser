@@ -87,6 +87,10 @@ a {
     font-family: $font-bold;
   }
 
+  .subtitle-callout {
+    color: #808080;
+  }
+
   .title-passive {
     color: #808080;
   }
@@ -112,11 +116,6 @@ a {
   li {
     line-height: 40px;
     text-align: center;
-    // @media (min-width: $mobile) {
-    //   display: inline-block;
-    //   margin: 3px 8px;
-    //   width: 230px;
-    // }
   }
 
   img {
