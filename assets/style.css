@@ -404,6 +404,14 @@ template {
 * {
   box-sizing: border-box; }
 
+img {
+  max-width: 100%; }
+
+figcaption {
+  font-size: 12px;
+  font-family: "open_sanssemibold", sans-serif;
+  color: gray; }
+
 body {
   background: #f2f2f2;
   color: #353535;
