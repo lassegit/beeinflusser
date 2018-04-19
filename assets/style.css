@@ -465,6 +465,8 @@ a {
     border-bottom: 1px solid #ddd;
     font-weight: normal;
     font-family: "open_sanssemibold", sans-serif; }
+  .info .subtitle {
+    margin: 20px 0 20px 0; }
   .info .subtitle-callout {
     color: #808080; }
   .info .title-passive {
@@ -475,6 +477,15 @@ a {
     line-height: 40px;
     font-size: 30px;
     margin: 10px 0; }
+
+blockquote {
+  font-family: "open_sanssemibold", sans-serif;
+  margin: 20px 0; }
+  blockquote > p {
+    margin-left: 40px; }
+
+.title-definition-sub {
+  color: #808080; }
 
 .flag {
   vertical-align: middle;

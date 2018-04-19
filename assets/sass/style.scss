@@ -87,6 +87,10 @@ a {
     font-family: $font-bold;
   }
 
+  .subtitle {
+    margin: 20px 0 20px 0;
+  }
+
   .subtitle-callout {
     color: #808080;
   }
@@ -102,6 +106,24 @@ a {
     font-size: 30px;
     margin: 10px 0;
   }
+}
+
+blockquote {
+  font-family: $font-bold;
+  margin: 20px 0;
+  > p {
+    margin-left: 40px;
+  }
+}
+
+
+
+.title-definition {
+
+}
+
+.title-definition-sub {
+  color: #808080;
 }
 
 .flag {
