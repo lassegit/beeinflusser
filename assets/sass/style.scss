@@ -11,6 +11,16 @@ $font-normal: 'open_sansregular', sans-serif;
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 12px;
+  font-family: $font-bold;
+  color: gray;
+}
+
 body {
   background: #f2f2f2;
   color: $text-color;
@@ -50,6 +60,10 @@ a {
     border-bottom-style: solid;
     color: #0090ec
   }
+}
+
+.pic {
+  border-radius: 5px;
 }
 
 .info {
@@ -97,11 +111,12 @@ a {
 
   li {
     line-height: 40px;
-    @media (min-width: $mobile) {
-      display: inline-block;
-      margin: 3px 8px;
-      width: 230px;
-    }
+    text-align: center;
+    // @media (min-width: $mobile) {
+    //   display: inline-block;
+    //   margin: 3px 8px;
+    //   width: 230px;
+    // }
   }
 
   img {
