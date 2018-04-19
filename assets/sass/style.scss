@@ -62,6 +62,10 @@ a {
   }
 }
 
+.pic {
+  border-radius: 5px;
+}
+
 .info {
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -107,11 +111,12 @@ a {
 
   li {
     line-height: 40px;
-    @media (min-width: $mobile) {
-      display: inline-block;
-      margin: 3px 8px;
-      width: 230px;
-    }
+    text-align: center;
+    // @media (min-width: $mobile) {
+    //   display: inline-block;
+    //   margin: 3px 8px;
+    //   width: 230px;
+    // }
   }
 
   img {
