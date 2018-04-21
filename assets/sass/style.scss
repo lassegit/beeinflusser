@@ -4,8 +4,8 @@
 $mobile: 768px;
 $tablet: 992px;
 $text-color: #353535;
-$font-bold: 'open_sanssemibold', sans-serif;
-$font-normal: 'open_sansregular', sans-serif;
+$font-bold: "open_sanssemibold", sans-serif;
+$font-normal: "open_sansregular", sans-serif;
 
 * {
   box-sizing: border-box;
@@ -41,7 +41,8 @@ h2 {
   margin: 30px 0 10px 0;
 }
 
-b, strong {
+b,
+strong {
   font-weight: normal;
   font-family: $font-bold;
 }
@@ -58,7 +59,7 @@ a {
   font-family: $font-bold;
   &:hover {
     border-bottom-style: solid;
-    color: #0090ec
+    color: #0090ec;
   }
 }
 
@@ -116,10 +117,7 @@ blockquote {
   }
 }
 
-
-
 .title-definition {
-
 }
 
 .title-definition-sub {
@@ -162,7 +160,6 @@ blockquote {
   font-size: 18px;
   text-align: center;
   &:hover {
-
   }
 }
 
