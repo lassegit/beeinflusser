@@ -1,16 +1,16 @@
 module.exports = function(grunt) {
-  'use strict';
-  require('load-grunt-tasks')(grunt);
+  "use strict";
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
     sass: {
       options: {
-        sourceMap: false,
+        sourceMap: false
       },
       dist: {
         files: {
-          'assets/style.css': 'assets/sass/style.scss',
+          "assets/style.css": "assets/sass/style.scss"
         }
       }
     },
@@ -20,24 +20,25 @@ module.exports = function(grunt) {
           inlineImg: false,
           inlineSvg: true,
           inlineSvgBase64: true,
-          minify: true,
+          minify: true
         },
         files: {
-          'index.html': 'assets/index.html'
+          "index.html": "assets/index.html"
         }
-      },
+      }
     },
     htmlmin: {
       dist: {
-        options: { // Reference: https://github.com/kangax/html-minifier#options-quick-reference
+        options: {
+          // Reference: https://github.com/kangax/html-minifier#options-quick-reference
           removeComments: true,
           conservativeCollapse: false,
           collapseWhitespace: true,
           minifyCSS: true,
-          minifyJS: true,
+          minifyJS: true
         },
         files: {
-          'index.html': 'index.html'
+          "index.html": "index.html"
         }
       }
     },
@@ -46,20 +47,18 @@ module.exports = function(grunt) {
         options: {
           patterns: [
             {
-              match: 'buildstamp',
-              replacement: '<%= new Date().toUTCString() %>'
+              match: "buildstamp",
+              replacement: "<%= new Date().toUTCString() %>"
             }
           ]
         },
-        files: [
-          {src: ['index.html'], dest: 'index.html'}
-        ]
+        files: [{ src: ["index.html"], dest: "index.html" }]
       }
     },
     watch: {
       scripts: {
-        files: ['assets/**/*.html', 'assets/**/*.scss', 'assets/**/*.svg'],
-        tasks: ['sass','assets_inline', 'htmlmin', 'replace'],
+        files: ["assets/**/*.html", "assets/**/*.scss", "assets/**/*.svg"],
+        tasks: ["sass", "assets_inline", "htmlmin", "replace"]
       }
     },
     connect: {
@@ -67,12 +66,12 @@ module.exports = function(grunt) {
         options: {
           port: 8080,
           livereload: false,
-          keepalive: false,
+          keepalive: false
         }
       }
-    },
+    }
   });
 
-  grunt.registerTask('build', ['sass', 'assets_inline', 'htmlmin', 'replace']);
-  grunt.registerTask('serve', ['connect', 'watch']);
+  grunt.registerTask("build", ["sass", "assets_inline", "htmlmin", "replace"]);
+  grunt.registerTask("serve", ["connect", "watch"]);
 };
