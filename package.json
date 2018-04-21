@@ -19,7 +19,6 @@
     "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
     "node-normalize-scss": "^3.0.0",
-    "prettier": "^1.12.1",
     "request": "^2.83.0"
   }
 }
